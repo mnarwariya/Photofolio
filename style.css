@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #000;
+    padding: 30px 0;
+    transition: 0.3s all;
+}
+.navbar i{
+    font-size: 32px;
+    margin-right: 8px;
+    line-height: 0;
+    color: #27a776;
+    transition: .3s all;
+}
+.navbar i:hover{
+    color: #0aee96;
+    transition: 0.3s all;
+}
+.navbar h1{
+    font-size: 32px;
+    font-weight: 400;
+    list-style: 0;
+    margin: 0;
+    font-family: 'Cardo', serif;
+    color: #fff
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    transition: 0.3s all;
+    letter-spacing: 1px;
+    padding: 10px 0 10px 30px !important;
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-nav a:hover{
+    color: #fff;
+}
+.nav-item .nav-link.active{
+    color: #fff !important;
+}
+.social-icon{
+    padding-right: 15px;
+}
+.social-icon i{
+    font-size: 16px;
+    margin: 0;
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 0;
+    transition: 0.3s all;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-icon i:hover{
+    color: #fff;
+}
+.navbar-toggler{
+    color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+.banner{
+    width: 100%;
+    min-height: 30vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0 60px 0;
+    background-color:#000;
+}
+.banner h2{
+    margin: 0 0 10px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Cardo',sans-serif;
+}
+.banner h2 span{
+    position: relative;
+    z-index: 1;
+    padding: 0 5px;
+    display: inline-block;
+}
+.banner h2 span::before{
+    content: "";
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #27a776;
+}
+.banner p{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.banner .btn-start{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    color: #fff;
+    background-color: #27a776;
+}
+.banner .btn-start:hover{
+    background-color: #0aee96;
+    color: #fff;
+}
+.gallery{
+    margin-top: 40px;
+}
+.gallery .gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s all;
+    display: block;
+}
+.gallery .gallery-item:hover .img-fluid{
+    transform: scale(1.15);
+    transition: 0.3s all;
+    opacity: 0.6;
+}
+.gallery .gallery-item .img-fluid{
+    display: block;
+    transition: 0.3s all;
+}
+.foot{
+    margin-top: 30px;
+    padding: 30px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.foot .copy{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+.foot .design{
+    padding-top: 6px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.foot .design a{
+    color: #27a776;
+}
+
+/************************** About Page CSS Start **************************/
+
+.page-about{
+    padding: 140px 0 60px 0;
+    min-height: 30vh;
+    position: relative;
+}
+.page-about h2{
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Cardo',sans-serif;
+}
+.page-about p{
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 17px;
+}
+.page-about .btn-start{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    color: #fff;
+    background-color: #27a776;
+}
+.page-about .btn-start:hover{
+    background-color: #0aee96;
+    color: #fff;
+}
+.contents h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #27a776; 
+}
+.contents p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+}
+.contents ul{
+    list-style: none;
+    padding: 0;
+}
+.contents ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.contents ul li i{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #27a776;
+    line-height: 0;
+}
+.contents ul li strong{
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+.contents ul li span{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+}
+.testimonials{
+    margin-top: 80px;
+}
+.sec-head{
+    padding-bottom: 40px;
+}
+.sec-head h2{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+.sec-head h2::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background-color: #5bd9a9;
+    margin: 1px 10px;
+}
+.sec-head p{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Cardo',sans-serif;
+    color: #fff;
+}
+
+/************************** About Page CSS End **************************/
+
+
+/************************** Gallery Page CSS Start  *********************/
+.natures{
+    width: 100%;
+    min-height: 30vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0 60px 0;
+    background-color:#000;
+}
+.natures h2{
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Cardo',sans-serif;
+}
+.natures p{
+    color: rgba(255, 255, 255, 0.8);
+}
+.natures .btn-start{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    color: #fff;
+    background-color: #27a776;
+}
+.natures .btn-start:hover{
+    background-color: #0aee96;
+    color: #fff;
+}
+
+/************************** Gallery Page CSS End  *********************/
+
+
+/************************** Services Page CSS Start  *********************/
+
+.Servi{
+    width: 100%;
+    min-height: 30vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0 60px 0;
+    background-color:#000;
+}
+.Servi h2{
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Cardo',sans-serif;
+}
+.Servi p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+}
+.Servi .btn-start{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    color: #fff;
+    background-color: #27a776;
+}
+.Servi .btn-start:hover{
+    background-color: #0aee96;
+    color: #fff;
+}
+.Servi-item{
+    padding: 50px 30px;
+    transition: 0.4s all ease-in-out;
+    background-color: #1d1f20;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+.Servi-item::before{
+    content: "";
+    position: absolute;
+    background-color: #1d1f20;
+    transition: 0.3s all;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+}
+.Servi-item:hover::before{
+    background-color: #27a776;
+    height: 100%;
+}
+.Servi-item i{
+    background-color: #27a776;
+    color: #fff;
+    font-size: 24px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.Servi-item:hover i{
+    color: #27a776;
+    background-color: #fff;
+}
+.Servi-item h4{
+    font-weight: 600;
+    margin: 15px 0 0 0;
+    transition: 0.3s all;
+    font-size: 22px;
+}
+.Servi-item h4 a{
+    color: #fff;
+}
+.Servi-item p{
+    line-height: 24px;
+    font-size: 15px;
+    margin: 15px 0 0 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+.pricing-item{
+    border-bottom: 1px dashed #474a4d;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-item h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+}
+.pricing-item h4{
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+/************************** Services Page CSS End  *********************/
+
+
+/************************** Contact Page CSS Start  *********************/
+
+.contact-part .info-item i{
+    font-size: 20px;
+    color: #27a776;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background-color: #222425;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s all ease-in-out;
+    margin-right: 15px;
+}
+.contact-part .info-item h4{
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.contact-part .info-item p{
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #fff;
+}
+.info-item:hover i{
+    background-color: #27a776;
+    color: #fff;
+}
+.email-form{
+    width: 100%;
+}
+.form-group{
+    padding-bottom: 8px;
+}
+.email-form input{
+    height: 44px;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 15px;
+    background-color: #1d1f20;
+    border: 1px solid #2e3133;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+}
+.form-group textarea{
+    padding: 10px 12px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 15px;
+    background-color: #1d1f20;
+    border: 1px solid #2e3133;
+    color: #fff;
+    outline: none;
+    display: block;
+    font-weight: 400;
+}
+.email-form button{
+    background-color: #27a776;
+    padding: 10px 35px;
+    border: 0;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.email-form button:hover{
+    background-color: #20865f;
+}
+
+/************************** Contact Page CSS End  *********************/
+
+.slides{
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s all;
+    text-align: center;
+}
+.slide-in{
+    width: 320px;
+    background-color: #222425;
+    margin: 0 16px;
+    padding: 30px;
+}
+.slides .star{
+    margin-bottom: 15px;
+}
+.slides .star i{
+    color: #ffc107;
+    margin: 0 1px 0px 1px;
+}
+.slides .star img{
+    width: 90px;
+    border-radius: 50%;
+    border: 5px solid #474a4d;
+    margin: 0 auto;
+}
+.slides .star p{
+    font-style: italic;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    padding-top: 15px;
+    text-align: justify;
+}
+.slides .star h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+}
+.slides .star h4{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+.carousel-indicators{
+    height: 1px;
+}
+.carousel-indicators button{
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50%;
+}
